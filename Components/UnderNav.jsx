@@ -1,6 +1,6 @@
 import React from "react";
 
-function underNav() {
+function UnderNav() {
   return (
     <div>
       <div
@@ -24,4 +24,4 @@ function underNav() {
   );
 }
 
-export default underNav;
+export default UnderNav;
