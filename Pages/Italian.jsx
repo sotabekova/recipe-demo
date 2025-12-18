@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../Components/navbar";
 import { Link } from "react-router-dom";
+import Footer from "../Components/Footer";
 
 function Italian() {
   return (
@@ -27,7 +28,7 @@ function Italian() {
 
       {/* Signature Dishes */}
       <section className="max-w-6xl mx-auto px-5 py-16">
-        <h2 className="text-4xl text-center text-[#f45b69] mb-12 font-bold">
+        <h2 className="text-4xl text-center text-[#43695D] mb-12 font-bold">
           Italian Dishes
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -49,7 +50,7 @@ function Italian() {
               
               <Link
                 to="/italian/fettuccine-alfredo"
-                className="inline-flex items-center px-4 py-2 bg-[#f45b69] text-white font-semibold rounded hover:bg-[#e54a5b] transition"
+                className="inline-flex items-center mt-4 px-4 py-2 bg-[#6B9080] text-white font-semibold rounded hover:bg-[#A4C3B2] transition"
               >
                <button>
                 Veiw recipe
@@ -74,7 +75,7 @@ function Italian() {
               </p>
               <Link
                 to="/italian/margherita-pizza"
-                className="inline-flex items-center px-4 py-2 bg-[#f45b69] text-white font-semibold rounded hover:bg-[#e54a5b] transition"
+                className="inline-flex items-center mt-4 px-4 py-2 bg-[#6B9080] text-white font-semibold rounded hover:bg-[#A4C3B2] transition"
               >
                 View Recipe
                 
@@ -97,7 +98,7 @@ function Italian() {
               </p>
                <Link
                 to="/italian/lasagna"
-                className="inline-flex items-center px-4 py-2 bg-[#f45b69] text-white font-semibold rounded hover:bg-[#e54a5b] transition"
+                className="inline-flex items-center mt-4 px-4 py-2 bg-[#6B9080] text-white font-semibold rounded hover:bg-[#A4C3B2] transition"
               >
                 View Recipe
                 
@@ -120,7 +121,7 @@ function Italian() {
               </p>
                <Link
                 to="/italian/focaccia"
-                className="inline-flex items-center px-4 py-2 bg-[#f45b69] text-white font-semibold rounded hover:bg-[#e54a5b] transition"
+                className="inline-flex items-center mt-4 px-4 py-2 bg-[#6B9080] text-white font-semibold rounded hover:bg-[#A4C3B2] transition"
               >
                 View Recipe
                 
@@ -143,7 +144,7 @@ function Italian() {
               </p>
                <Link
                 to="/italian/tiramisu"
-                className="inline-flex items-center px-4 py-2 bg-[#f45b69] text-white font-semibold rounded hover:bg-[#e54a5b] transition"
+                className="inline-flex items-center mt-4 px-4 py-2 bg-[#6B9080] text-white font-semibold rounded hover:bg-[#A4C3B2] transition"
               >
                 View Recipe
                 
@@ -168,7 +169,7 @@ function Italian() {
               </p>
               <Link
                 to="/italian/chickenparm"
-                className="inline-flex items-center px-4 py-2 bg-[#f45b69] text-white font-semibold rounded hover:bg-[#e54a5b] transition"
+                className="inline-flex items-center px-4 py-2 mt-4 bg-[#6B9080] text-white font-semibold rounded hover:bg-[#A4C3B2] transition"
               >
                 View Recipe
               </Link>
@@ -176,6 +177,7 @@ function Italian() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

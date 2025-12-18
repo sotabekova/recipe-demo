@@ -1,70 +1,99 @@
-import React from 'react'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMoon as faMoonSolid } from "@fortawesome/free-solid-svg-icons";
-import { faMoon as faMoonRegular } from "@fortawesome/free-regular-svg-icons";
-import { Link } from "react-router-dom";
+import Footer from "../Components/Footer";
+import Navbar from "../Components/navbar";
 
 function Alfredo() {
   return (
-    <div>
-       <nav className="w-full bg-amber-100 shadow-md fixed top-0 left-0 z-50">
-     <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
- <Link to="/" className="text-2xl font-bold">
-          Logo
-        </Link>
-  <div className="flex items-center gap-4 text-xl cursor-pointer md:order-2">
-    <label
-      htmlFor="menu-toggle"
-      className="cursor-pointer text-3xl md:hidden"
-    >
-      ☰
-    </label>
+   <div> <div className="max-w-5xl mx-auto px-4 py-6 space-y-8">
+      <Navbar />
 
-    <div className="flex items-center">
-      <FontAwesomeIcon icon={faMoonSolid} />
-      <span className="hidden">
-        <FontAwesomeIcon icon={faMoonRegular} />
-      </span>
+      <h1 className=" pt-20 text-3xl md:text-4xl font-bold text-center">
+        Fettuccine Alfredo
+      </h1>
+      <p className=" ">
+        A creamy, comforting Italian classic made with simple ingredients and
+        rich flavor.
+      </p>
+
+      <img
+        src="/images/alfredomain.png"
+        alt="Fettuccine Alfredo"
+        className="w-full h-64 md:h-80 object-cover rounded-2xl shadow"
+      />
+
+      <section className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm bg-gray-50 p-4 rounded-2xl">
+        <div>
+          <p className="font-bold">Prep</p>
+          <p>10 min</p>
+        </div>
+        <div>
+          <p className="font-bold">Cook</p>
+          <p>15 min</p>
+        </div>
+        <div>
+          <p className="font-bold">Servings</p>
+          <p>2–3</p>
+        </div>
+        <div>
+          <p className="font-bold">Difficulty</p>
+          <p>Easy</p>
+        </div>
+      </section>
+
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <section>
+          <h2 className="text-xl font-semibold mb-3">Ingredients</h2>
+          <ul className="list-disc list-inside space-y-2 ">
+            <li>250 g fettuccine pasta</li>
+            <li>2 tbsp butter</li>
+            <li>2 cloves garlic, minced</li>
+            <li>1 cup heavy cream</li>
+            <li>1 cup freshly grated Parmesan cheese</li>
+            <li>Salt, to taste</li>
+            <li>Black pepper, to taste</li>
+            <li>Fresh parsley (optional)</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 className="text-xl font-semibold mb-3">Instructions</h2>
+          <ol className="list-decimal list-inside space-y-3 ">
+            <li>Cook fettuccine in salted boiling water until al dente.</li>
+            <li>Melt butter in a pan over medium heat and add garlic.</li>
+            <li>Pour in the cream and gently simmer for 3–4 minutes.</li>
+            <li>Stir in Parmesan cheese until the sauce is smooth.</li>
+            <li>Toss pasta with the sauce, adding pasta water if needed.</li>
+            <li>Season with salt and pepper and serve immediately.</li>
+          </ol>
+        </section>
+      </section>
+
+      <section className="bg-gray-50 rounded-2xl p-5">
+        <h2 className="text-xl font-semibold mb-2">Tips </h2>
+        <ul className="list-disc list-inside space-y-2 ">
+          <li>Add grilled chicken or shrimp for extra protein.</li>
+          <li>Use freshly grated Parmesan for best texture.</li>
+          <li>Serve right away — Alfredo thickens as it sits.</li>
+        </ul>
+      </section>
+
+      <section className="pt-20">
+        <h1 className="text-3xl md:text-4xl font-bold mb-6">Watch Video:</h1>
+        <div className="flex justify-center">
+          <iframe
+           className=" h-[250px] w-[400px] md:h-[500px] md:w-[900px]"
+            src="https://www.youtube.com/embed/F7CU0qBdj04?si=3wXsB8sHijMdu6Bx"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+   
     </div>
-  </div>
-
-  <input type="checkbox" id="menu-toggle" className="hidden peer" />
-
-  <ul
-    className="
-    bg-amber-100
-      absolute md:static w-full left-0 md:w-auto
-      px-6 md:px-0 pt-4 md:pt-0 pb-4 md:pb-0
-      shadow-md md:shadow-none
-
-      opacity-0 top-[-300px]
-      peer-checked:opacity-100 peer-checked:top-16
-      transition-all duration-300
-
-      md:flex md:opacity-100 md:top-auto
-      md:order-1
-    "
-  >
-    <li className="py-2 px-4 md:py-0  cursor-pointer">
-      Home
-    </li>
-    <li className="py-2 px-4 md:py-0  cursor-pointer">
-      About
-    </li>
-    <li className="py-2 px-4 md:py-0  cursor-pointer">
-      Blog
-    </li>
-    <li className="py-2 px-4 md:py-0  cursor-pointer">
-      Contact
-    </li>
-  </ul>
-</div>
-
-    </nav>
-
-    
-    </div>
-  )
+       <Footer />
+       </div>
+  );
 }
-
-export default Alfredo
+export default Alfredo;

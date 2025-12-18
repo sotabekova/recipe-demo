@@ -3,6 +3,7 @@ import Navbar from '../Components/navbar'
 import UnderNav from "../Components/underNav";
 import Carousel from '../Components/Carousel';
 import CuisineSection from '../Components/CuisineSection';
+import Footer from '../Components/Footer';
 
 
 function HomePage() {
@@ -12,6 +13,7 @@ function HomePage() {
         <UnderNav />
         <Carousel />
         <CuisineSection />
+        <Footer />
     </div>
   )
 }

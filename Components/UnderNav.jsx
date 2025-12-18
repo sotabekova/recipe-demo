@@ -10,11 +10,11 @@ function underNav() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <h1 className="unnav-text text-white text-[120px] pt-40 md:text-[150px] md:pt-52 lg:text-[200px] lg:pt-60">
+        <h1 className="unnav-text  text-[100px] pt-40 md:text-[150px] md:pt-52 lg:text-[200px] lg:pt-60">
           Recipes
         </h1>
 
-        <p className="text-white mx-7 md:text-[20px] lg:text-[25px]">
+        <p className=" mx-7 md:text-[20px] lg:text-[25px]">
           Discover easy, delicious recipes made for everyday cooking. Explore,
           try, and make something amazing today
         </p>

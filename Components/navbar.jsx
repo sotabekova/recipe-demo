@@ -3,13 +3,23 @@ import { faMoon as faMoonSolid } from "@fortawesome/free-solid-svg-icons";
 import { faMoon as faMoonRegular } from "@fortawesome/free-regular-svg-icons";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useTranslation } from "react-i18next"; // use the hook
+import i18n from "../src/i18n";
 
 export default function Navbar() {
-  const [language, setLanguage] = useState("uz");
+  const { t } = useTranslation();
+  const [language, setLanguage] = useState(i18n.language || "en");
+
+  const handleLanguageChange = (e) => {
+    const selectedLang = e.target.value;
+    setLanguage(selectedLang);
+    i18n.changeLanguage(selectedLang); // 🔑 change i18n language
+  };
+
   return (
-    <nav className="w-full bg-amber-100 shadow-md fixed top-0 left-0 z-50">
+    <nav className="w-full bg-[#6B9080] shadow-md fixed top-0 left-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-        <Link to="/" className="text-2xl font-bold">
+        <Link to="/" className="text-2xl text-[#F8F6F2] font-bold">
           Logo
         </Link>
         <div className="flex items-center gap-4 text-xl cursor-pointer md:order-2">
@@ -26,10 +36,11 @@ export default function Navbar() {
               <FontAwesomeIcon icon={faMoonRegular} />
             </span>
           </div>
+
           <select
             className="border rounded-xl px-2 py-1 bg-white text-lg"
             value={language}
-            onChange={(e) => setLanguage(e.target.value)}
+            onChange={handleLanguageChange} 
           >
             <option value="uz">Uzbek</option>
             <option value="ru">Russian</option>
@@ -39,25 +50,22 @@ export default function Navbar() {
 
         <input type="checkbox" id="menu-toggle" className="hidden peer" />
 
-        <ul
-          className="
-    bg-amber-100
-      absolute md:static w-full left-0 md:w-auto
-      px-6 md:px-0 pt-4 md:pt-0 pb-4 md:pb-0
-      shadow-md md:shadow-none
-
-      opacity-0 top-[-300px]
-      peer-checked:opacity-100 peer-checked:top-16
-      transition-all duration-300
-
-      md:flex md:opacity-100 md:top-auto
-      md:order-1
-    "
-        >
-          <li className="py-2 px-4 md:py-0  cursor-pointer">Home</li>
-          <li className="py-2 px-4 md:py-0  cursor-pointer">About</li>
-          <li className="py-2 px-4 md:py-0  cursor-pointer">Blog</li>
-          <li className="py-2 px-4 md:py-0  cursor-pointer">Contact</li>
+        <ul className="bg-[#6B9080] absolute md:static w-full left-0 md:w-auto px-6 md:px-0 pt-4 md:pt-0 pb-4 md:pb-0 shadow-md md:shadow-none opacity-0 top-[-300px] peer-checked:opacity-100 peer-checked:top-16 transition-all duration-300 md:flex md:opacity-100 md:top-auto md:order-1">
+          <Link to={"/"}>
+            {" "}
+            <li className="py-2 px-4 md:py-0 text-[#F8F6F2] cursor-pointer">
+              {t("home")}
+            </li>
+          </Link>{" "}
+         <Link to={"/about"}> <li className="py-2 px-4 md:py-0 text-[#F8F6F2] cursor-pointer">
+            {t("about")}
+          </li></Link>
+         <Link to={"/blog"}> <li className="py-2 px-4 md:py-0 text-[#F8F6F2] cursor-pointer">
+            {t("blog")}
+          </li></Link>
+         <Link to={"/contact"}>  <li className="py-2 px-4 md:py-0 text-[#F8F6F2] cursor-pointer">
+            {t("contact")}
+          </li></Link>
         </ul>
       </div>
     </nav>
