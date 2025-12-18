@@ -13,7 +13,7 @@ function HomePage() {
         <UnderNav />
         <Carousel />
         <CuisineSection />
-        <Footer />
+        <Footer /> 
     </div>
   )
 }
