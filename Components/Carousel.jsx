@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useTranslation } from "react-i18next"; 
+
 
 export default function Carousel() {
+    const { t } = useTranslation();
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const slides = [
     {
@@ -75,7 +79,7 @@ export default function Carousel() {
       <div className="w-full max-w-6xl">
         <div className="text text-center pt-5">
           <h1 className="text-[#43695D] text-5xl  md:text-[80px] pb-20">
-            Search by Meal
+            {t("Search by Meal")}
           </h1>
         </div>
 

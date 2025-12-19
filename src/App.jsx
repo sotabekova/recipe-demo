@@ -24,6 +24,9 @@ import Turkish from "../Pages/Turkish";
 import About from "../Pages/About";
 import Blog from "../Pages/Blog";
 import Contact from "../Pages/Contact";
+import Plov from "../Uzbek/Plov";
+import Meatsomsa from "../Uzbek/Meatsomsa";
+import Lagman from "../Uzbek/Lagman";
 
 function App() {
   return (
@@ -55,6 +58,9 @@ function App() {
    <Route path="/about" element={<About />}/>
    <Route path="/blog" element={<Blog />}/>
    <Route path="/contact" element={<Contact />}/>
+   <Route path="/uzbek/plov" element={<Plov />}/>
+   <Route path="/uzbek/meatsomsa" element={<Meatsomsa />}/>
+   <Route path="/uzbek/lagman" element={<Lagman />}/>
     </Routes>
 
   );

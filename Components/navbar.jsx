@@ -38,13 +38,30 @@ export default function Navbar() {
           </div>
 
           <select
-            className="border rounded-xl px-2 py-1 bg-white text-lg"
+            className="
+    bg-[#6B9080]
+    text-[#F8F6F2]
+    border border-[#A4C3B2]
+    rounded-xl
+    px-3 py-1
+    text-base
+    focus:outline-none
+    focus:ring-2
+    focus:ring-[#A4C3B2]
+    cursor-pointer
+  "
             value={language}
-            onChange={handleLanguageChange} 
+            onChange={handleLanguageChange}
           >
-            <option value="uz">Uzbek</option>
-            <option value="ru">Russian</option>
-            <option value="en">English</option>
+            <option className="text-black" value="uz">
+              Uzbek
+            </option>
+            <option className="text-black" value="ru">
+              Russian
+            </option>
+            <option className="text-black" value="en">
+              English
+            </option>
           </select>
         </div>
 
@@ -57,15 +74,24 @@ export default function Navbar() {
               {t("home")}
             </li>
           </Link>{" "}
-         <Link to={"/about"}> <li className="py-2 px-4 md:py-0 text-[#F8F6F2] cursor-pointer">
-            {t("about")}
-          </li></Link>
-         <Link to={"/blog"}> <li className="py-2 px-4 md:py-0 text-[#F8F6F2] cursor-pointer">
-            {t("blog")}
-          </li></Link>
-         <Link to={"/contact"}>  <li className="py-2 px-4 md:py-0 text-[#F8F6F2] cursor-pointer">
-            {t("contact")}
-          </li></Link>
+          <Link to={"/about"}>
+            {" "}
+            <li className="py-2 px-4 md:py-0 text-[#F8F6F2] cursor-pointer">
+              {t("about")}
+            </li>
+          </Link>
+          <Link to={"/blog"}>
+            {" "}
+            <li className="py-2 px-4 md:py-0 text-[#F8F6F2] cursor-pointer">
+              {t("blog")}
+            </li>
+          </Link>
+          <Link to={"/contact"}>
+            {" "}
+            <li className="py-2 px-4 md:py-0 text-[#F8F6F2] cursor-pointer">
+              {t("contact")}
+            </li>
+          </Link>
         </ul>
       </div>
     </nav>
