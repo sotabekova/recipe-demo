@@ -27,6 +27,28 @@ import Contact from "../Pages/Contact";
 import Plov from "../Uzbek/Plov";
 import Meatsomsa from "../Uzbek/Meatsomsa";
 import Lagman from "../Uzbek/Lagman";
+import ChickenSomsa from "../Uzbek/ChickenSomsa";
+import Manti from "../Uzbek/Manti";
+import Shashlik from "../Uzbek/Shashlik";
+import Shurpa from "../Uzbek/Shurpa";
+import Katlama from "../Uzbek/Katlama";
+import AdanaKebab from "../Turkish/AdanaKebab";
+import Lahmacun from "../Turkish/Lahmacun";
+import Doner from "../Turkish/Doner";
+import Pide from "../Turkish/Pide";
+import Crepes from "../Breakfast/Crepes";
+import FrenchToast from "../Breakfast/FrenchToast";
+import Shakshuka from "../Breakfast/Shakshuka";
+import CheeseOmelette from "../Breakfast/CheeseOmelette";
+import ChocolateMuffins from "../Breakfast/ChocolateMuffins";
+import Pentuza from "../Salad/Pentuza";
+import Fattoush from "../Salad/Fattoush";
+import Dinner from "../Dinner/Dinner";
+import { Dessert } from "lucide-react";
+import Desserts from "../dessert/Desserts";
+import Snacks from "../Snacks/Snacks";
+import French from "../Pages/French";
+import Beverages from "../beverages/Beverages";
 
 function App() {
   return (
@@ -61,6 +83,28 @@ function App() {
    <Route path="/uzbek/plov" element={<Plov />}/>
    <Route path="/uzbek/meatsomsa" element={<Meatsomsa />}/>
    <Route path="/uzbek/lagman" element={<Lagman />}/>
+   <Route path="/uzbek/chickensomsa" element={<ChickenSomsa />}/>
+   <Route path="/uzbek/manti" element={<Manti />}/>
+   <Route path="/uzbek/shashlik" element={<Shashlik />}/>
+   <Route path="/uzbek/shurpa" element={<Shurpa />}/>
+   <Route path="/uzbek/katlama" element={<Katlama />}/>
+   <Route path="/turkish/adana-kebab" element={<AdanaKebab />}/>
+   <Route path="/turkish/lahmacun" element={<Lahmacun />}/>
+   <Route path="/turkish/doner" element={<Doner />}/>
+   <Route path="/turkish/pide" element={<Pide />}/>
+   <Route path="/breakfast/crepes" element={<Crepes />}/>
+   <Route path="/breakfast/pancakes" element={<Pancakes />}/>
+   <Route path="/breakfast/frenchtoast" element={<FrenchToast />}/>
+   <Route path="/breakfast/shakshuka" element={<Shakshuka />}/>
+   <Route path="/breakfast/omelette" element={<CheeseOmelette />}/>
+   <Route path="/breakfast/chocolatemuffins" element={<ChocolateMuffins />}/>
+   <Route path="/salads/pentuza" element={<Pentuza />}/>
+   <Route path="/salads/fattoush" element={<Fattoush/>}/>
+   <Route path="/dinner" element={<Dinner />}/>
+   <Route path="/desserts" element={<Desserts />}/>
+   <Route path="/snacks" element={<Snacks/>}/>
+   <Route path="/french" element={<French/>}/>
+   <Route path="/beverages" element={<Beverages/>}/>
     </Routes>
 
   );

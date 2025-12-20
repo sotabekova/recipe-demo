@@ -36,7 +36,7 @@ function Turkish() {
           {/* Kebabs */}
           <div className="bg-white rounded-xl shadow-lg overflow-hidden">
             <img
-              src="/images/kebab.png"
+              src="/images/adanakebab.png"
               alt="Adana Kebab"
               className="w-full h-56 object-cover"
             />
@@ -58,7 +58,7 @@ function Turkish() {
           {/* Döner */}
           <div className="bg-white rounded-xl shadow-lg overflow-hidden">
             <img
-              src="/images/doner.png"
+              src="/images/donerkebab.png"
               alt="Doner Kebab"
               className="w-full h-56 object-cover"
             />

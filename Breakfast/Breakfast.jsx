@@ -1,5 +1,6 @@
 import Navbar from "../Components/navbar";
 import Footer from "../Components/Footer";
+import { Link } from "react-router-dom";
 
 export default function Breakfast() {
   return (
@@ -34,12 +35,12 @@ export default function Breakfast() {
               <p className="text-sm text-gray-600">
                 Light, fluffy pancakes perfect with maple syrup.
               </p>
-              <a
-                href="/pancakes"
-                className="inline-block bg-[#6B9080] text-white px-5 py-2 rounded-lg font-semibold hover:bg-[#A4C3B2] transition"
+              <Link
+                to="/breakfast/pancakes"
+                className="inline-flex items-center mt-4 px-4 py-2 bg-[#6B9080] text-white font-semibold rounded hover:bg-[#A4C3B2] transition"
               >
                 View Recipe
-              </a>
+              </Link>
             </div>
           </div>
           {/* Card 2 */}
@@ -54,12 +55,12 @@ export default function Breakfast() {
               <p className="text-sm text-gray-600">
                 A quick, protein-packed breakfast classic.
               </p>
-              <a
-                href="/crepes"
-                className="inline-block bg-[#6B9080] text-white px-5 py-2 rounded-lg font-semibold hover:bg-[#A4C3B2] transition"
+               <Link
+                to="/breakfast/crepes"
+                className="inline-flex items-center mt-4 px-4 py-2 bg-[#6B9080] text-white font-semibold rounded hover:bg-[#A4C3B2] transition"
               >
                 View Recipe
-              </a>
+              </Link>
             </div>
           </div>
           {/* Card 3 */}
@@ -74,12 +75,12 @@ export default function Breakfast() {
               <p className="text-sm text-gray-600">
                 Golden, soft, and lightly spiced with cinnamon.
               </p>
-              <a
-                href="/french-toast"
-                className="inline-block bg-[#6B9080] text-white px-5 py-2 rounded-lg font-semibold hover:bg-[#A4C3B2] transition"
+              <Link
+                to="/breakfast/frenchtoast"
+                className="inline-flex items-center mt-4 px-4 py-2 bg-[#6B9080] text-white font-semibold rounded hover:bg-[#A4C3B2] transition"
               >
                 View Recipe
-              </a>
+              </Link>
             </div>
           </div>
           <div className="rounded-2xl overflow-hidden shadow-lg bg-white">
@@ -95,12 +96,12 @@ export default function Breakfast() {
               <p className="text-sm text-gray-600">
                 A quick, protein-packed breakfast classic.
               </p>
-              <a
-                href="/omelette"
-                className="inline-block bg-[#6B9080] text-white px-5 py-2 rounded-lg font-semibold hover:bg-[#A4C3B2] transition"
+                <Link
+                to="/breakfast/omelette"
+                className="inline-flex items-center mt-4 px-4 py-2 bg-[#6B9080] text-white font-semibold rounded hover:bg-[#A4C3B2] transition"
               >
                 View Recipe
-              </a>
+              </Link>
             </div>
           </div>{" "}
           <div className="rounded-2xl overflow-hidden shadow-lg bg-white">
@@ -110,18 +111,17 @@ export default function Breakfast() {
               className="h-56 w-full object-cover"
             />
             <div className="p-5 space-y-3">
-              <h3 className="text-xl font-bold text-[#43695D]">
-               Shakshuka
-              </h3>
+              <h3 className="text-xl font-bold text-[#43695D]">Shakshuka</h3>
               <p className="text-sm text-gray-600">
                 A quick, protein-packed breakfast classic.
               </p>
-              <a
-                href="/shakshuka"
-                className="inline-block bg-[#6B9080] text-white px-5 py-2 rounded-lg font-semibold hover:bg-[#A4C3B2] transition"
+                <Link
+                to="/breakfast/shakshuka"
+                className="inline-flex items-center mt-4 px-4 py-2 bg-[#6B9080] text-white font-semibold rounded hover:bg-[#A4C3B2] transition"
               >
                 View Recipe
-              </a>
+              </Link>
+            
             </div>
           </div>{" "}
           <div className="rounded-2xl overflow-hidden shadow-lg bg-white">
@@ -132,82 +132,22 @@ export default function Breakfast() {
             />
             <div className="p-5 space-y-3">
               <h3 className="text-xl font-bold text-[#43695D]">
-               Chocolate Muffins
+                Chocolate Muffins
               </h3>
               <p className="text-sm text-gray-600">
                 A quick, protein-packed breakfast classic.
               </p>
-              <a
-                href="/omelette"
-                className="inline-block bg-[#6B9080] text-white px-5 py-2 rounded-lg font-semibold hover:bg-[#A4C3B2] transition"
+              <Link
+                to="/breakfast/chocolatemuffins"
+                className="inline-flex items-center mt-4 px-4 py-2 bg-[#6B9080] text-white font-semibold rounded hover:bg-[#A4C3B2] transition"
               >
                 View Recipe
-              </a>
+              </Link>
             </div>
           </div>{" "}
-          <div className="rounded-2xl overflow-hidden shadow-lg bg-white">
-            <img
-              src="/images/omelette.png"
-              alt="Omelette"
-              className="h-56 w-full object-cover"
-            />
-            <div className="p-5 space-y-3">
-              <h3 className="text-xl font-bold text-[#43695D]">
-                Cheese Omelette
-              </h3>
-              <p className="text-sm text-gray-600">
-                A quick, protein-packed breakfast classic.
-              </p>
-              <a
-                href="/omelette"
-                className="inline-block bg-[#6B9080] text-white px-5 py-2 rounded-lg font-semibold hover:bg-[#A4C3B2] transition"
-              >
-                View Recipe
-              </a>
-            </div>
-          </div>{" "}
-          <div className="rounded-2xl overflow-hidden shadow-lg bg-white">
-            <img
-              src="/images/omelette.png"
-              alt="Omelette"
-              className="h-56 w-full object-cover"
-            />
-            <div className="p-5 space-y-3">
-              <h3 className="text-xl font-bold text-[#43695D]">
-                Cheese Omelette
-              </h3>
-              <p className="text-sm text-gray-600">
-                A quick, protein-packed breakfast classic.
-              </p>
-              <a
-                href="/omelette"
-                className="inline-block bg-[#6B9080] text-white px-5 py-2 rounded-lg font-semibold hover:bg-[#A4C3B2] transition"
-              >
-                View Recipe
-              </a>
-            </div>
-          </div>{" "}
-          <div className="rounded-2xl overflow-hidden shadow-lg bg-white">
-            <img
-              src="/images/omelette.png"
-              alt="Omelette"
-              className="h-56 w-full object-cover"
-            />
-            <div className="p-5 space-y-3">
-              <h3 className="text-xl font-bold text-[#43695D]">
-                Cheese Omelette
-              </h3>
-              <p className="text-sm text-gray-600">
-                A quick, protein-packed breakfast classic.
-              </p>
-              <a
-                href="/omelette"
-                className="inline-block bg-[#6B9080] text-white px-5 py-2 rounded-lg font-semibold hover:bg-[#A4C3B2] transition"
-              >
-                View Recipe
-              </a>
-            </div>
-          </div>
+         
+         
+        
         </div>
       </div>
 

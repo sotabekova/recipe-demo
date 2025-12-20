@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { useTranslation } from "react-i18next"; 
-
+import { useTranslation } from "react-i18next";
 
 export default function Carousel() {
-    const { t } = useTranslation();
+  const { t } = useTranslation();
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const slides = [
     {
       id: 1,
-      image: "https://images.unsplash.com/photo-1465014925804-7b9ede58d0d7?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image:
+        "https://images.unsplash.com/photo-1465014925804-7b9ede58d0d7?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "Breakfast",
       description: "Start your day right",
       link: "/breakfast",
@@ -45,6 +45,7 @@ export default function Carousel() {
         "https://images.unsplash.com/photo-1706650439799-d4a8894556b6?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "Snacks",
       description: "Quick bites",
+      link: "/snacks",
     },
     {
       id: 6,
@@ -52,6 +53,7 @@ export default function Carousel() {
         "https://images.unsplash.com/photo-1523677011781-c91d1bbe2f9e?q=80&w=993&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "Beverages",
       description: "Refreshing drinks",
+      link: "/beverages",
     },
   ];
 

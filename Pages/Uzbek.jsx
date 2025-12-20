@@ -44,12 +44,9 @@ function Uzbek() {
                 Fragrant rice with tender meat, carrots, onions, and aromatic
                 spices. Plov is the heart of Uzbek celebrations.
               </p>
-              <a
-                href="/uzbek/plov"
-                className="inline-block bg-[#6B9080] text-white mt-4 px-5 py-2 rounded-lg font-semibold hover:bg-[#A4C3B2] transition"
-              >
-                View Recipe
-              </a>
+             <Link to={"/uzbek/plov"}>
+                <button className="inline-block bg-[#6B9080] text-white mt-4 px-5 py-2 rounded-lg font-semibold hover:bg-[#A4C3B2] transition">Veiw Recipe</button>
+              </Link>
             </div>
           </div>
 
@@ -65,17 +62,14 @@ function Uzbek() {
               <p className="text-gray-700">
                 Crispy baked pastries filled with juicy minced meat and onions.
               </p>
-              <a
-                href="/uzbek/meatsomsa"
-                className="inline-block bg-[#6B9080] text-white mt-4 px-5 py-2 rounded-lg font-semibold hover:bg-[#A4C3B2] transition"
-              >
-                View Recipe
-              </a>
+               <Link to={"/uzbek/meatsomsa"}>
+                <button className="inline-block bg-[#6B9080] text-white mt-4 px-5 py-2 rounded-lg font-semibold hover:bg-[#A4C3B2] transition">Veiw Recipe</button>
+              </Link>
             </div>
           </div>
 
           {/* Chicken Somsa */}
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+          <div className="bg-white  rounded-xl shadow-lg overflow-hidden">
             <img
               src="/images/chickensomsa.png"
               alt="Chicken Somsa"
@@ -86,12 +80,9 @@ function Uzbek() {
               <p className="text-gray-700">
                 Golden pastries filled with seasoned chicken, baked until crisp.
               </p>
-              <a
-                href="/uzbek/chickensomsa"
-                className="inline-block bg-[#6B9080] text-white mt-4 px-5 py-2 rounded-lg font-semibold hover:bg-[#A4C3B2] transition"
-              >
-                View Recipe
-              </a>
+              <Link to={"/uzbek/chickensomsa"}>
+                <button className="inline-block bg-[#6B9080] text-white mt-4 px-5 py-2 rounded-lg font-semibold hover:bg-[#A4C3B2] transition">Veiw Recipe</button>
+              </Link>
             </div>
           </div>
 
@@ -116,7 +107,7 @@ function Uzbek() {
           {/* Manti */}
           <div className="bg-white rounded-xl shadow-lg overflow-hidden">
             <img
-              src="/images/manti.jpg"
+              src="/images/Manti.png"
               alt="Manti"
               className="w-full h-56 object-cover"
             />
@@ -125,19 +116,16 @@ function Uzbek() {
               <p className="text-gray-700">
                 Steamed dumplings filled with spiced meat and onions.
               </p>
-              <a
-                href="/uzbek/manti"
-                className="inline-block bg-[#6B9080] text-white mt-4 px-5 py-2 rounded-lg font-semibold hover:bg-[#A4C3B2] transition"
-              >
-                View Recipe
-              </a>
+              <Link to={"/uzbek/manti"}>
+                <button className="inline-block bg-[#6B9080] text-white mt-4 px-5 py-2 rounded-lg font-semibold hover:bg-[#A4C3B2] transition">Veiw Recipe</button>
+              </Link>
             </div>
           </div>
 
           {/* Shashlik */}
           <div className="bg-white rounded-xl shadow-lg overflow-hidden">
             <img
-              src="/images/shashlik.jpg"
+              src="/images/shashlik.png"
               alt="Shashlik"
               className="w-full h-56 object-cover"
             />
@@ -147,19 +135,16 @@ function Uzbek() {
                 Marinated meat grilled on skewers, perfect for outdoor
                 gatherings.
               </p>
-              <a
-                href="/uzbek/shashlik"
-                className="inline-block bg-[#6B9080] text-white mt-4 px-5 py-2 rounded-lg font-semibold hover:bg-[#A4C3B2] transition"
-              >
-                View Recipe
-              </a>
+              <Link to={"/uzbek/shashlik"}>
+                <button className="inline-block bg-[#6B9080] text-white mt-4 px-5 py-2 rounded-lg font-semibold hover:bg-[#A4C3B2] transition">Veiw Recipe</button>
+              </Link>
             </div>
           </div>
 
           {/* Shurpa */}
           <div className="bg-white rounded-xl shadow-lg overflow-hidden">
             <img
-              src="/images/shurpa.jpg"
+              src="/images/Shurpa.png"
               alt="Shurpa"
               className="w-full h-56 object-cover"
             />
@@ -168,19 +153,16 @@ function Uzbek() {
               <p className="text-gray-700">
                 A hearty Uzbek soup made with lamb, vegetables, and herbs.
               </p>
-              <a
-                href="/uzbek/shurpa"
-                className="inline-block bg-[#6B9080] text-white mt-4 px-5 py-2 rounded-lg font-semibold hover:bg-[#A4C3B2] transition"
-              >
-                View Recipe
-              </a>
+              <Link to={"/uzbek/shurpa"}>
+                <button className="inline-block bg-[#6B9080] text-white mt-4 px-5 py-2 rounded-lg font-semibold hover:bg-[#A4C3B2] transition">Veiw Recipe</button>
+              </Link>
             </div>
           </div>
 
           {/* Katlama */}
           <div className="bg-white rounded-xl shadow-lg overflow-hidden">
             <img
-              src="/images/katlama.jpg"
+              src="/images/qatlama.png"
               alt="Katlama"
               className="w-full h-56 object-cover"
             />
@@ -189,12 +171,9 @@ function Uzbek() {
               <p className="text-gray-700">
                 Layered Uzbek flatbread, crispy outside and soft inside.
               </p>
-              <a
-                href="/uzbek/katlama"
-                className="inline-block bg-[#6B9080] text-white mt-4 px-5 py-2 rounded-lg font-semibold hover:bg-[#A4C3B2] transition"
-              >
-                View Recipe
-              </a>
+              <Link to={"/uzbek/katlama"}>
+                <button className="inline-block bg-[#6B9080] text-white mt-4 px-5 py-2 rounded-lg font-semibold hover:bg-[#A4C3B2] transition">Veiw Recipe</button>
+              </Link>
             </div>
           </div>
         </div>

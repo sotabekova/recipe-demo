@@ -13,3 +13,45 @@ body {
 
 
 }
+
+body.dark {
+  background-color: #294038;
+  color: #f8f6f2;
+}
+
+body.dark nav {
+  background-color: #1C2E28;
+}
+
+
+
+body.dark a {
+  color: #f8f6f2;
+}
+/* Default light mode */
+body {
+  background-color: #f8f6f2;
+  color: #1a1a1a;
+}
+
+/* Dark mode */
+body.dark {
+  background-color: #294038;
+  color: #f8f6f2;
+}
+
+/* Example: buttons */
+
+
+body.dark button {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark h1 {
+    color: #F8F6F2;
+
+}body.dark h2 {
+    color: #F8F6F2;
+
+}

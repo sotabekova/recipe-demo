@@ -23,7 +23,7 @@ export default function CuisineSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+        <div className=" grid grid-cols-2 md:grid-cols-3 gap-6" >
           {cuisines.map((cuisine, index) => (
             <Link key={index} to={cuisine.link} className="group cursor-pointer">
               <div className="w-full h-[220px] md:h-[280px] lg:h-[330px] rounded-xl overflow-hidden shadow-lg">
